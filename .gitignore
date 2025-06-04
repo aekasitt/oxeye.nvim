@@ -1,0 +1,13 @@
+# build 
+target
+lua/*.so
+
+
+# macOS
+.DS_Store
+
+
+# workspace setting
+.idea
+.ignore
+.vscode

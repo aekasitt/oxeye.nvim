@@ -1,0 +1,14 @@
+[dependencies]
+mlua = { features = ['luajit', 'module'], version = '0.9' }
+rand = '0.8'
+rsille = '2.1.0'
+
+
+[lib]
+crate-type = ['cdylib']
+
+
+[package]
+edition = '2024'
+name = 'game-of-life'
+version = '0.1.0'
