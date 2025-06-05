@@ -32,6 +32,7 @@ oxeye.nvim/
 │
 ├── plugin/
 │   └── oxeye.lua           # Verify dependencies before setup
+│   └── state.lua           # Store window id, buffer and other configs
 │
 ├── src/
 │   └── lib.rs              # Implement Conway's Game of Life
