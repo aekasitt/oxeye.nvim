@@ -87,10 +87,11 @@
   <text
     font-family='Anchan'
     font-size='8rem'
+    letter-spacing='.8rem'
     text-anchor='left'
     x='16rem'
     y='8rem'>
-    Oxeye
+    อ็อกซ์อาย
   </text>
   <text
     font-family='Arial'
