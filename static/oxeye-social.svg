@@ -131,17 +131,17 @@
     <tspan
       dy='0rem'
       x='32rem'>
-      Braille animations and more
+      Structural search / rewrite
     </tspan>
     <tspan
       dy='2rem'
       x='32rem'>
-      within Neovim using Rust
+      tool inside Neovim using
     </tspan>
     <tspan
       dy='2rem'
       x='32rem'>
-      and Rsille
+      `ast-grep`
     </tspan>
   </text>
   <rect

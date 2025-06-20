@@ -98,10 +98,10 @@
     y='12rem'
     >
     <tspan dy='0' x='16rem'>
-      Braille animations and more within Neovim
+      Structural search / rewrite tool inside Neovim
     </tspan>
     <tspan dy='1.6rem' x='16rem'>
-      using Rust and Rsille
+      using `ast-grep`
     </tspan>
   </text>
 </svg>

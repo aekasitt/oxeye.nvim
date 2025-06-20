@@ -13,12 +13,41 @@
 ```lua
 {
   'aekasitt/oxeye.nvim',
+  config = function()
+    local oxeye = require('oxeye')
+    vim.keymap.set('n', '<leader>og', oxeye.live_grep, { desc = 'Live structural search' })
+    vim.keymap.set('n', '<leader>ox', oxeye.search, { desc = 'Structural search' })
+  end,
+  dependencies = {
+    'ibhagwan/fzf-lua',
+    'nvim-lua/plenary.nvim',
+  }
 }
 ```
 
 ### Packer
 
-TBD;
+```lua
+use {
+  'aekasitt/oxeye.nvim',
+  config = function()
+    local oxeye = require('oxeye')
+    vim.keymap.set('n', '<leader>og', oxeye.live_grep, { desc = 'Live structural search' })
+    vim.keymap.set('n', '<leader>ox', oxeye.search, { desc = 'Structural search' })
+  end,
+  requires = {
+    'ibhagwan/fzf-lua',
+    'nvim-lua/plenary.nvim',
+  },
+}
+```
+
+## Roadmap
+
+* More commands
+* Less `fzf-lua`, floating panel and previewer can be done without
+* Add ast-grep linting
+* Dynamic installation scripts (install via `brew`, `npm` or `pip`)
 
 ## Project structure
 
@@ -27,23 +56,28 @@ oxeye.nvim/
 │
 ├── lua/
 │   └── oxeye/
-│       └── build.lua       # Install python dependencies
+│       ├── build.lua       # Install ast-grep using cargo
 │       └── init.lua        # Setup oxeye if not existed
 │
 ├── plugin/
-│   └── oxeye.lua           # Verify dependencies before setup
+│   ├── oxeye.lua           # Verify dependencies before setup
 │   └── state.lua           # Store window id, buffer and other configs
-│
-├── src/
-│   └── lib.rs              # Implement Conway's Game of Life
 │
 ├── LICENSE                 # Details of MIT License
 └── README.md               # Descriptions and roadmap
 ```
 
+### Alternatives
+
+1. [cshuaimin/ssr.nvim](https://github.com/cshuaimin/ssr.nvim) - Treesitter based structural search and replace plugin for Neovim.
+2. [MagicDuck/grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim) - Find and Replace plugin for neovim
+3. [ray-x/telescope-ast-grep.nvim](https://github.com/ray-x/telescope-ast-grep.nvim) - AST grep extension for telescope.nvim
+
 ### Acknowledgements
 
 1. [อัญชัญ - Anchan](https://www.f0nt.com/release/anchan/) typeface by [Alisara Zilch](https://www.f0nt.com/author/zilch/)
+2. [YT: ast-grep - DevOnDuty](https://youtu.be/HnlqPwTMEVc)
+  by [Dr. David Alexander Kunz](https://github.com/David-Kunz)
 
 ## License
 
