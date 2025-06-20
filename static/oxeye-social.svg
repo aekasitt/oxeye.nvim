@@ -131,17 +131,22 @@
     <tspan
       dy='0rem'
       x='32rem'>
-      Structural search / rewrite
+      Structural search and rewrite tool
     </tspan>
     <tspan
       dy='2rem'
       x='32rem'>
-      tool inside Neovim using
+      to locate and replace code inside
     </tspan>
     <tspan
       dy='2rem'
       x='32rem'>
-      `ast-grep`
+      Neovim using 
+    </tspan>
+    <tspan
+      text-decoration='underline'
+      x='47rem'>
+      ast-grep
     </tspan>
   </text>
   <rect

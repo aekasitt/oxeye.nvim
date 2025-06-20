@@ -98,10 +98,13 @@
     y='12rem'
     >
     <tspan dy='0' x='16rem'>
-      Structural search / rewrite tool inside Neovim
+      Structural search and rewrite tool to locate and replace
     </tspan>
     <tspan dy='1.6rem' x='16rem'>
-      using `ast-grep`
+      code inside Neovim using
+    </tspan>
+    <tspan text-decoration='underline' x='30rem'>
+      ast-grep
     </tspan>
   </text>
 </svg>
