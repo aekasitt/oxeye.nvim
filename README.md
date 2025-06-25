@@ -15,8 +15,7 @@
   'aekasitt/oxeye.nvim',
   config = function()
     local oxeye = require('oxeye')
-    vim.keymap.set('n', '<leader>og', oxeye.live_grep, { desc = 'Live structural search' })
-    vim.keymap.set('n', '<leader>ox', oxeye.search, { desc = 'Structural search' })
+    vim.keymap.set('n', '<leader>ox', oxeye.live_grep, { desc = 'Live structural search' })
   end,
   dependencies = {
     'ibhagwan/fzf-lua',
@@ -32,8 +31,7 @@ use {
   'aekasitt/oxeye.nvim',
   config = function()
     local oxeye = require('oxeye')
-    vim.keymap.set('n', '<leader>og', oxeye.live_grep, { desc = 'Live structural search' })
-    vim.keymap.set('n', '<leader>ox', oxeye.search, { desc = 'Structural search' })
+    vim.keymap.set('n', '<leader>ox', oxeye.live_grep, { desc = 'Live structural search' })
   end,
   requires = {
     'ibhagwan/fzf-lua',
