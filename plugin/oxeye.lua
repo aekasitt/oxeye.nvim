@@ -8,3 +8,7 @@ if not has_fzf_lua or not has_plenary then
     vim.notify('Unmet dependencies for oxeye.nvim', vim.log.levels.ERROR)
   end)
 end
+
+vim.api.nvim_create_user_command('Oxeye', function()
+  require('oxeye').live_grep()
+end, { desc = 'Syntax-aware live grep (ast-grep + fzf)' })
