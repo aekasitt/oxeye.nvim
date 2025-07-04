@@ -96,15 +96,18 @@
   <text
     font-family='Arial'
     font-size='1.2rem'
-    y='12rem'
+    y='10rem'
     >
-    <tspan dy='0' x='16rem'>
-      Structural search and rewrite tool to locate and replace
+    <tspan dy='0' x='40rem'>
+      /ˈäksˌī/
     </tspan>
     <tspan dy='1.6rem' x='16rem'>
-      code inside Neovim using
+      Structural search and rewrite tool to locate and
     </tspan>
-    <tspan text-decoration='underline' x='30rem'>
+    <tspan dy='1.6rem' x='16rem'>
+      replace code inside Neovim using
+    </tspan>
+    <tspan text-decoration='underline' x='34.3rem'>
       ast-grep
     </tspan>
   </text>
