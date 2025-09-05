@@ -6,6 +6,11 @@
 [![Last commit](https://img.shields.io/github/last-commit/aekasitt/oxeye.nvim/master)](https://github.com/aekasitt/oxeye.nvim)
 ![Oxeye Banner](static/oxeye-banner.svg)
 
+  :construction: **ARCHIVED**
+  please see [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim) for syntax-aware
+  search and replace plugin powered by [ast-grep](https://ast-grep.github.io)
+  and [ripgrep](https://github.com/BurntSushi/ripgrep)
+
 ## Installation
 
 ### Lazy
